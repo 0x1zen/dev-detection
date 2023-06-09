@@ -1,0 +1,31 @@
+@font-face {
+    font-family: MyFont1;
+    src: url(./Fonts/BebasNeue-Regular.ttf);
+  }
+  @font-face {
+    font-family: MyFont2;
+    src: url(./Fonts/Comfortaa-VariableFont_wght.ttf);
+  }
+/* rgb(255, 242, 230) */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    /* background: rgb(192,243,246);
+background: linear-gradient(0deg, rgba(192,243,246,1) 0%, rgba(45,209,253,1) 100%); */
+background:rgb(240, 156, 154);
+
+height: 100vh;
+width:100vw;
+font-family: MyFont2;
+}
+#ab1{
+    height:300px;
+    width:900px;
+}
+#ab2{
+    height:300px;
+    width:900px; 
+}
