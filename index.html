@@ -2,67 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev-Detection</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Dev-Detective</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    hii
     <div class="wrapper">
-        <h1>Dev Detective</h1>
-        <div class="input-field">
-            <input type="text" placeholder="Enter a Github Ussername...">
-            <button class="search-btn">Search</button>
+        <div class="header">
+           <h1>DevDetective</h1>
+           <div class="dark">
+            <h2>Dark</h2>
+            <button id="dark-button">
+            <img src="./assets/images/moon-icon.svg" alt="">
+            </button>
+           </div>
         </div>
+        <div class="search-bar active">
+            <img src="./assets/images/search-icon.svg" alt="">
+            <input type="text" id="input" name="user-input" placeholder="Enter Github User Name" required>
+            <div class="error">
+                <p id="no-results">no search results</p>
+            </div>
+            <button>Search</button>
+        </div>
+        <div class="hero-section">
+            <div class="profile-pic">
 
-        <div class="main-box">
- <div class="person-intro">
-    <img src="" alt="">
-    <div class="person-info">
-        <h1 class="person-name"></h1>
-        <a href="" class="person-username"></a>
-        <p class="person-description"></p>
-    </div>
-    <p class="joining-date"></p>
- </div>
- <div class="git-info">
-    <div class="repo-div">
-        <p>Repos</p>
-        <h2 class="repos"></h2>
-    </div>
-    <div class="followers-div">
-<p>Followers</p>
-<h2 class="followers"></h2>
-    </div>
-    <div class="following-div">
-        <p>Following</p>
-        <h2 class="following"></h2>
-    </div>
-    
- </div>
- <div class="other-info">
-    <div class="other1"> 
-<div class="location">
-    <img src="./assets/images/location-icon.svg" alt="">
-    <p class="location-info"></p>
-</div>
-<div class="twitter">
-<img src="./assets/images/twitter-icon.svg" alt="">
-<p class="twitter-info"></p>
-</div>
-    </div>
-    <div class="other2">
-        <div class="website">
-            <img src="./assets/images/website-icon.svg" alt="">
-            <p class="website-info"></p>
-        </div>
-        <div class="company">
-<img src="./assets/images/company-icon.svg" alt="">
-<p class="company-info"></p>
-        </div>
-    </div>
- </div>
+            </div>
+            <div class="content-box">
+                <div class="name-info">
+                    <h2 id="user-display-name"></h2>
+                    <p id="joined-date"></p>
+                </div>
+                <p class="user-name-blue"></p>
+                <p class="user-description"></p>
+                <div class="cards">
+                    <div class="repos">
+                        <p id="repos">Repos</p>
+                        <h2 id="repo-count"></h2>
+                    </div>
+                    <div class="followers">
+                        <p id="followers">Followers</p>
+                        <h2 id="follower-count"></h2>
+                    </div>
+                    <div class="following">
+                        <p id="following">Following</p>
+                        <h2 id="following-count"></h2>
+                    </div>
+                </div>
+                    <div class="user-info-faded">
+                        <div class="row1">
+                            <div class="location">
+                                <img src="./assets/images/location-icon.svg" alt="">
+                                <p id="user-location"></p>
+                            </div>
+                            <div class="website">
+                                <img src="./assets/images/company-icon.svg" alt="">
+                                <p class="user-website"></p>
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="twitter">
+                                <img src="./assets/images/twitter-icon.svg" alt="">
+                                <p></p>
+                            </div>
+                            <div class="company">
+                                <img src="./assets/images/company-icon.svg" alt="">
+                                <p id="company-name"></p>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
         </div>
     </div>
 </body>
