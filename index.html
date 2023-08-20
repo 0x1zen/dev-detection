@@ -12,12 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="header">
-           <h1>DevDetective</h1>
+           <h1 class="main-heading">DevDetective</h1>
            <div class="dark">
             <h2>Dark</h2>
             <button id="dark-button">
@@ -31,7 +31,7 @@
             <div class="error">
                 <p id="no-results">no search results</p>
             </div>
-            <button>Search</button>
+            <button class="search-btn">Search</button>
         </div>
         <div class="hero-section">
             <div class="profile-pic">
@@ -40,11 +40,12 @@
             <div class="content-box">
                 <div class="name-info">
                     <h2 id="user-display-name"></h2>
+                    <a href="#" target="_blank" rel="noopener noreferrer" id="user"></a>
                     <p id="joined-date"></p>
                 </div>
                 <p class="user-name-blue"></p>
                 <p class="user-description"></p>
-                <div class="cards">
+                <div class="profile-cards">
                     <div class="repos">
                         <p id="repos">Repos</p>
                         <h2 id="repo-count"></h2>

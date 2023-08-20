@@ -17,3 +17,79 @@
     box-sizing: border-box;
     font-family: "Space Mono", monospace;
   }
+  body {
+    background-color: var(--lm-bg);
+    font-size: 13px;
+    color: var(--lm-text);
+    width: 100%;
+    position: relative;
+    height: 100vh;
+  }
+  .wrapper {
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    gap:20rem;
+    
+  }
+  .dark{
+    display: flex;
+    justify-content: space-between;
+    gap:11px;
+  }
+  #dark-button{
+    outline:none;
+    border: none;
+    background-color: var(--lm-bg);
+    padding-bottom: 3px;
+    cursor: pointer;
+  }
+  .search-bar{
+    position: relative;
+    background-color: var(--lm-bg-content);
+    border-radius: 15px;
+    box-shadow: var(--lm-shadow);
+    display: flex;
+    height: 100%;
+    padding: 6px;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position-x: 24px;
+    background-position-y: center;
+    background-size: 20px;
+  }
+  #input {
+    border: none;
+    width: 80%;
+    outline: none;
+    background: none;
+    color: var(--lm-text);
+    padding-left: 50px;
+    width:800px;
+  }
+  
+  #input::placeholder {
+    color: var(--lm-text);
+    letter-spacing: -0.5px;
+    font-size: 13px;
+  }
+  .search-bar{
+    height: 20px;
+    width: 20px;
+    padding: 0 10px 0px 16px;
+  }
+ .search-btn{
+    border: none;
+    background-color: var(--btn);
+    color:white;
+ }
