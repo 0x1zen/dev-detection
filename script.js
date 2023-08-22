@@ -119,4 +119,19 @@ function updateProfile(data){
     }
 }
 
+//SWITCH TO DARK MODE - activateDarkMode()
+function darkModeProperties() {
+    root.setProperty("--lm-bg", "#141D2F");
+    root.setProperty("--lm-bg-content", "#1E2A47");
+    root.setProperty("--lm-text", "white");
+    root.setProperty("--lm-text-alt", "white");
+    root.setProperty("--lm-shadow-xl", "rgba(70,88,109,0.15)");
+    modetext.innerText = "LIGHT";
+    modeicon.src = "./assets/images/sun-icon.svg";
+    root.setProperty("--lm-icon-bg", "brightness(1000%)");
+    darkMode = true;
+    console.log("darkmode changed to " + darkMode);
+    localStorage.setItem("dark-mode", true);  console.log("setting dark mode to true");
+    console.log("setting dark mode to true");
+}
 
