@@ -135,3 +135,20 @@ function darkModeProperties() {
     console.log("setting dark mode to true");
 }
 
+//SWITCH TO LIGHT MODE - activateLightMode()
+function lightModeProperties() {
+    root.setProperty("--lm-bg", "#F6F8FF");
+    root.setProperty("--lm-bg-content", "#FEFEFE");
+    root.setProperty("--lm-text", "#4B6A9B");
+    root.setProperty("--lm-text-alt", "#2B3442");
+    root.setProperty("--lm-shadow-xl", "rgba(70, 88, 109, 0.25)");
+    modetext.innerText = "DARK";
+    modeicon.src = "./assets/images/moon-icon.svg";
+    root.setProperty("--lm-icon-bg", "brightness(100%)");
+    darkMode = false;
+    console.log("darkmode changed to " + darkMode);
+  
+    localStorage.setItem("dark-mode", false);
+    console.log("setting dark mode to false");
+  }
+  
