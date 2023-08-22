@@ -152,3 +152,20 @@ function lightModeProperties() {
     console.log("setting dark mode to false");
   }
   
+//   Initialize UI
+function init(){
+    darkMode=false;
+    const value=localStorage.getItem("dark-mode");
+    if(value==null){
+        localStorage.setItem("dark-mode",darkMode);
+        lightModeProperties();
+    }
+    else if(value==true){
+        darkModeProperties();
+    }
+    else if (value==false){
+        lightModeProperties();
+    }
+    getUserData(url + "0x1zen");
+}
+init();
