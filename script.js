@@ -97,7 +97,7 @@ function updateProfile(data){
        // The datesegments array now contains the year, month, and day components of the creation date.
        date.innerText = `Joined ${datesegments[2]} ${months[datesegments[1] - 1]} ${datesegments[0]}`;
        bio.innerText=data.bio==null ? "This Profile Has No Bio" : `${data.bio}`;
-       repos.innerText=`${data.repos_url}`;
+       repos.innerText=`${data.public_repos}`;
        followers.innerText=`${data.followers}`;
        following.innerText=`${data.following}`;
        user_location.innerText = checkNull(data.location, user_location) ? data.location : "Not Available";
